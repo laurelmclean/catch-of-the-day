@@ -2,8 +2,10 @@ import React from "react";
 import { getFunName } from "../helpers";
 import { useState } from "react";
 import { withRouter } from "react-router-dom";
+import PropTypes from "prop-types";
 
 function StorePicker(props) {
+
     const [input, setInput] = useState(getFunName())
 
     return (
@@ -17,5 +19,9 @@ function StorePicker(props) {
         </form>
     )
 };
+
+StorePicker.propTypes = {
+    history: PropTypes.object.isRequired
+}
 
 export default withRouter(StorePicker);
