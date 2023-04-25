@@ -15,10 +15,10 @@ class Inventory extends React.Component {
         loadSampleFishes: PropTypes.func,
     };
 
-    state {
-        uid: null
-        ``
-    }
+    // state {
+    //     uid: null
+    //     ``
+    // }
 
     authHandler = async (authData) => {
         //look up current store in firebase db

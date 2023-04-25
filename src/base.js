@@ -1,8 +1,9 @@
 import Rebase from "re-base";
 import firebase from "firebase";
+require('dotenv').config()
 
 const firebaseApp = firebase.initializeApp({
-    apiKey: "AIzaSyBxwvBPGfyV06ht3GXAIXpvxIcnyC8S3vA",
+    apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
     authDomain: "catch-of-the-day-laurel.firebaseapp.com",
     databaseURL: "https://catch-of-the-day-laurel-default-rtdb.firebaseio.com",
     projectId: "catch-of-the-day-laurel",
